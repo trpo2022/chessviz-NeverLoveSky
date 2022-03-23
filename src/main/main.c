@@ -1,4 +1,4 @@
-#include <libchessviz/chessviz.h>
+#include <libchessviz/chessviz.c>
 
 #include <stdio.h>
 int main()

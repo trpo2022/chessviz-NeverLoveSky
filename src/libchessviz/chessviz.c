@@ -1,4 +1,3 @@
-#include <libchessviz/chessviz.h>
 #include <stdio.h>
 #include <stdlib.h>
 
