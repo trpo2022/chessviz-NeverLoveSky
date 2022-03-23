@@ -56,14 +56,12 @@ void BlackMove(int* step_int, char mas[9][9])
 {
     if ((step_int[1] == 1) && (step_int[4] == step_int[1] + 2)
         && (mas[step_int[4]][step_int[3]] == ' ')) {
-        mas[step_int[4]][step_int[3]]
-                = mas[step_int[1]][step_int[0]];
+        mas[step_int[4]][step_int[3]] = mas[step_int[1]][step_int[0]];
         mas[step_int[1]][step_int[0]] = ' ';
     } else if (
             (mas[step_int[4]][step_int[3]] == ' ')
             && (step_int[4] == step_int[1] + 1)) {
-        mas[step_int[4]][step_int[3]]
-                = mas[step_int[1]][step_int[0]];
+        mas[step_int[4]][step_int[3]] = mas[step_int[1]][step_int[0]];
         mas[step_int[1]][step_int[0]] = ' ';
     } else if (
             (mas[step_int[4]][step_int[3]] > 'A')
@@ -71,8 +69,7 @@ void BlackMove(int* step_int, char mas[9][9])
             && (step_int[4] == step_int[1] + 1)
             && ((step_int[3] == step_int[0] + 1)
                 || (step_int[3] == step_int[0] - 1))) {
-        mas[step_int[4]][step_int[3]]
-                = mas[step_int[1]][step_int[0]];
+        mas[step_int[4]][step_int[3]] = mas[step_int[1]][step_int[0]];
         mas[step_int[1]][step_int[0]] = ' ';
     }
 }
@@ -80,22 +77,19 @@ void WhiteMove(int* step_int, char mas[9][9])
 {
     if ((step_int[1] == 6) && (step_int[4] == step_int[1] - 2)
         && (mas[step_int[4]][step_int[3]] == ' ')) {
-        mas[step_int[4]][step_int[3]]
-                = mas[step_int[1]][step_int[0]];
+        mas[step_int[4]][step_int[3]] = mas[step_int[1]][step_int[0]];
         mas[step_int[1]][step_int[0]] = ' ';
     } else if (
             (mas[step_int[4]][step_int[3]] == ' ')
             && (step_int[4] == step_int[1] - 1)) {
-        mas[step_int[4]][step_int[3]]
-                = mas[step_int[1]][step_int[0]];
+        mas[step_int[4]][step_int[3]] = mas[step_int[1]][step_int[0]];
         mas[step_int[1]][step_int[0]] = ' ';
     } else if (
             (mas[step_int[4]][step_int[3]] > 'a')
             && (step_int[4] == step_int[1] - 1)
             && ((step_int[3] == step_int[0] + 1)
                 || (step_int[3] == step_int[0] - 1))) {
-        mas[step_int[4]][step_int[3]]
-                = mas[step_int[1]][step_int[0]];
+        mas[step_int[4]][step_int[3]] = mas[step_int[1]][step_int[0]];
         mas[step_int[1]][step_int[0]] = ' ';
     }
 }
